@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="theme.css" type="text/css">
+</head>
+
+<body>
+  <div class="text-center" style="	background-image: url(bg.jpg);	background-position: top left;	background-size: 100%;	background-repeat: repeat;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8"><img class="d-block img-fluid mx-auto" src="image 27 (1).png" height="20%
+%20
+0.1" width="40%"></div>
+        <div class="col-md-2"><a class="btn btn-primary mt-4 w-100" href="login">Giriş Yap</a></div>
+      </div>
+      <div class="row">
+        <div class="p-5 mx-auto col-md-6 col-10">
+          <h3 class="display-4">Geleceğin CEO'larını Ortakları ile tanıştıran network </h3>
+          <p class="mb-3 lead">Fikrin için en uygun yeteneği ve aracı bul!</p>
+          <a class="btn btn-primary btn-lg w-75" href="login">Hemen Başla</a>
+        </div>
+        <div class="col-md-6"></div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row border rounded border-light shadow bg-light w-75 mx-auto">
+        <div class="col-md-4 border-right border-info">
+          <div class="row">
+            <div class="col-md-6"><img class="d-block mx-auto mt-2" src="user.png" width="50%"></div>
+            <div class="col-md-6">
+              <h2 class="text-center text-dark">900+<br>Girişimci</h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 border-left border-right border-info">
+          <div class="row">
+            <div class="col-md-6"><img class="d-block mx-auto mt-2" src="user.png" width="50%"></div>
+            <div class="col-md-6">
+              <h2 class="text-center text-dark">1200+<br>Yetenekli Genç</h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 border-left border-right border-info">
+          <div class="row">
+            <div class="col-md-6"><img class="d-block mx-auto mt-2" src="user.png" width="50%"></div>
+            <div class="col-md-6">
+              <h2 class="text-center text-dark">800+<br>Üretim tesisi</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-5 text-center text-white" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url(https://static.pingendo.com/cover-bubble-dark.svg);  background-position: center center, center center;  background-size: cover, cover;  background-repeat: repeat, repeat;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 mx-auto">
+          <h1 class="mb-3">Güncel İstekler</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="container bootstrap snippets bootdey">
+              <div class="row">
+                <div class="panel panel-default widget">
+                  <div class="panel-heading">
+                    <span class="glyphicon glyphicon-comment"></span>
+                  </div>
+                  <div class="panel-body">
+                    <ul class="list-group">
+                      {{#each loc}}
+                      <li class="list-group-item">
+                        <div class="row">
+                          <div class="col-xs-12 col-md-12" style="width: 100%;">
+                            <div>
+                              <a href="#" style="font-size: x-large;">{{head}}</a>
+                              <div class="mic-info"> <a href="#">{{user}}</a> Tarih:{{date}}</div>
+                            </div>
+                            <div class="comment-text"> {{text}} </div>
+                            <div class="action">
+                              <button type="button" class="btn btn-success btn-xs" title="Talep">
+                                <span class="glyphicon glyphicon-ok"></span>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      {{/each}}
+                    </ul>
+                    <a href="#" class="btn btn-info btn-sm btn-block" role="button"><span class="glyphicon glyphicon-refresh"></span> More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+
+</html>
